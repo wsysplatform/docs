@@ -1,0 +1,9 @@
+* Работа с файлами
+** Примеры использования
+*** Создание текстового файла и добавление строк
+    #+BEGIN_SRC php -n
+    /// @see http://php.net/manual/ru/function.fopen.php
+    $this->file()->fopen('path/to/file.txt', 'a')->setAlias(1);
+    $this->file(1)->writeln('line 1');
+    $this->file(1)->close();
+    #+END_SRC php
